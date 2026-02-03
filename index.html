@@ -536,6 +536,74 @@
     }
     .wa-float .wa-btn:hover{ transform: translateY(-3px); }
     .wa-float .wa-btn i{ font-size: 1.35rem; }
+
+    /* =======================
+       QUICK INFO PREMIUM CARD
+       ======================= */
+    .quick-card .quick-actions{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .quick-card .quick-actions .btn{
+      flex: 1 1 auto;
+      min-width: 150px;
+    }
+
+    .info-grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+    }
+    .info-item{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      padding:12px;
+      border-radius:18px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.035);
+      position:relative;
+    }
+    .info-item .ic{
+      width:42px;height:42px;
+      border-radius:14px;
+      display:grid;place-items:center;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.05);
+      color: var(--gold);
+      flex:0 0 auto;
+    }
+    .info-item .k{
+      font-size:.86rem;
+      color: rgba(234,240,255,.62);
+    }
+    .info-item .v{
+      font-weight:900;
+      letter-spacing:.2px;
+    }
+
+    .copy-mini{
+      margin-left:auto;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.05);
+      color: var(--text);
+      width:40px;height:40px;
+      border-radius:14px;
+      display:grid;place-items:center;
+      transition: transform .18s ease, border-color .18s ease, background .18s ease;
+    }
+    .copy-mini:hover{
+      transform: translateY(-2px);
+      border-color: var(--line2);
+      background: rgba(255,255,255,.08);
+    }
+
+    .quick-share{
+      border:1px dashed var(--line);
+      border-radius:18px;
+      background: rgba(255,255,255,.03);
+    }
   </style>
 
   <!-- Person Schema (basic) -->
@@ -636,7 +704,7 @@
             <h1 style="font-weight:1000; letter-spacing:.2px; margin:0;">Professional Profile</h1>
             <p class="mt-2 mb-0" style="color:var(--muted); line-height:1.65">
               Maya Garg is a passionate actress and professional model, actively seeking audition opportunities for
-              web series, TV serials, short films, music videos, and digital content. :contentReference[oaicite:1]{index=1}
+              web series, TV serials, short films, music videos, and digital content.
             </p>
           </div>
         </div>
@@ -656,7 +724,7 @@
           </div>
           <div class="stat">
             <div class="n"><i class="bi bi-translate me-1" style="color:var(--gold)"></i> Languages</div>
-            <div class="l">Hindi • English :contentReference[oaicite:2]{index=2}</div>
+            <div class="l">Hindi • English</div>
           </div>
         </div>
 
@@ -713,9 +781,9 @@
         <p style="color:var(--muted); line-height:1.75" class="mb-0">
           Confident and passionate aspiring actress with a strong desire to work in web series and television serials.
           Comfortable in front of the camera with expressive abilities and screen presence. Highly adaptable, disciplined,
-          and eager to learn from industry professionals. :contentReference[oaicite:3]{index=3}
+          and eager to learn from industry professionals.
           <br><br>
-          Open to various formats including web series, television serials, short films, music videos, and digital content. :contentReference[oaicite:4]{index=4}
+          Open to various formats including web series, television serials, short films, music videos, and digital content.
         </p>
 
         <div class="glass p-3 mt-3" style="box-shadow:none">
@@ -735,12 +803,12 @@
       <div class="glass p-4 h-100">
         <h5 class="mb-3" style="font-weight:900">🔹 Skills & Details</h5>
 
-        <div class="info-row"><span>Location</span><strong>Noida :contentReference[oaicite:5]{index=5}</strong></div>
-        <div class="info-row"><span>Age</span><strong>23 Years :contentReference[oaicite:6]{index=6}</strong></div>
-        <div class="info-row"><span>Height</span><strong>5.8 ft :contentReference[oaicite:7]{index=7}</strong></div>
-        <div class="info-row"><span>Languages</span><strong>Hindi, English :contentReference[oaicite:8]{index=8}</strong></div>
-        <div class="info-row"><span>Strengths</span><strong>Expressions • Dialogue • Screen Presence :contentReference[oaicite:9]{index=9}</strong></div>
-        <div class="info-row"><span>Availability</span><strong>Auditions & Shoots :contentReference[oaicite:10]{index=10}</strong></div>
+        <div class="info-row"><span>Location</span><strong>Noida</strong></div>
+        <div class="info-row"><span>Age</span><strong>23 Years</strong></div>
+        <div class="info-row"><span>Height</span><strong>5.8 ft</strong></div>
+        <div class="info-row"><span>Languages</span><strong>Hindi, English</strong></div>
+        <div class="info-row"><span>Strengths</span><strong>Expressions • Dialogue • Screen Presence</strong></div>
+        <div class="info-row"><span>Availability</span><strong>Auditions & Shoots</strong></div>
 
         <div class="mt-3 p-3" style="border:1px dashed var(--line); border-radius:18px; background: rgba(255,255,255,.03)">
           <div class="d-flex gap-2 align-items-start">
@@ -748,7 +816,7 @@
             <div style="color:var(--muted); line-height:1.55">
               <strong style="color:var(--text)">Email:</strong> actressmayagarg@gmail.com
               <br>
-              <strong style="color:var(--text)">Phone/WhatsApp:</strong> +91 7870048407 :contentReference[oaicite:11]{index=11}
+              <strong style="color:var(--text)">Phone/WhatsApp:</strong> +91 7870048407
             </div>
           </div>
         </div>
@@ -783,7 +851,7 @@
         <h5 class="mb-1">📺 TV Serials</h5>
         <ul class="mb-0" style="color:var(--muted); line-height:1.75">
           <li>Daily soaps & episodic roles</li>
-          <li>Strong dialogue delivery & voice modulation :contentReference[oaicite:12]{index=12}</li>
+          <li>Strong dialogue delivery & voice modulation</li>
         </ul>
       </div>
     </div>
@@ -826,10 +894,10 @@
         <div class="work-icon"><i class="bi bi-lightning-charge"></i></div>
         <h5 class="mb-1">🔹 Skills</h5>
         <div class="mt-2" style="color:var(--muted); line-height:1.75">
-          <div>• Camera Facing Confidence :contentReference[oaicite:13]{index=13}</div>
-          <div>• Dialogue Delivery & Voice Modulation :contentReference[oaicite:14]{index=14}</div>
-          <div>• Emotional Expressions :contentReference[oaicite:15]{index=15}</div>
-          <div>• Adaptability & Discipline :contentReference[oaicite:16]{index=16}</div>
+          <div>• Camera Facing Confidence</div>
+          <div>• Dialogue Delivery & Voice Modulation</div>
+          <div>• Emotional Expressions</div>
+          <div>• Adaptability & Discipline</div>
         </div>
       </div>
     </div>
@@ -853,8 +921,6 @@
   </div>
 
   <div class="row g-3">
-
-    <!-- 1 -->
     <div class="col-12 col-sm-6 col-lg-4 gallery-item" data-cat="photoshoot">
       <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#imgModal"
         data-img="images/5.jpeg" data-title="Photoshoot — Studio" data-desc="Editorial • expressive • high-fashion frames">
@@ -872,7 +938,6 @@
       </div>
     </div>
 
-    <!-- 2 -->
     <div class="col-12 col-sm-6 col-lg-4 gallery-item" data-cat="traditional">
       <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#imgModal"
         data-img="images/9.jpeg" data-title="Traditional Look" data-desc="Graceful presence • festive styling • rich expressions">
@@ -890,7 +955,6 @@
       </div>
     </div>
 
-    <!-- 3 -->
     <div class="col-12 col-sm-6 col-lg-4 gallery-item" data-cat="western">
       <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#imgModal"
         data-img="images/3.jpeg" data-title="Western Look" data-desc="Confident styling • bold frame • clean aesthetics">
@@ -908,7 +972,6 @@
       </div>
     </div>
 
-    <!-- 4 -->
     <div class="col-12 col-sm-6 col-lg-4 gallery-item" data-cat="stills">
       <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#imgModal"
         data-img="images/1.jpeg" data-title="On-screen Still" data-desc="Character mood • cinematic vibe • story-driven frame">
@@ -926,7 +989,6 @@
       </div>
     </div>
 
-    <!-- 5 -->
     <div class="col-12 col-sm-6 col-lg-4 gallery-item" data-cat="brand">
       <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#imgModal"
         data-img="images/7.jpeg" data-title="Brand Shoot" data-desc="Campaign look • premium styling • fashion branding">
@@ -944,7 +1006,6 @@
       </div>
     </div>
 
-    <!-- 6 -->
     <div class="col-12 col-sm-6 col-lg-4 gallery-item" data-cat="photoshoot">
       <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#imgModal"
         data-img="images/15.png" data-title="Photoshoot — Editorial" data-desc="Magazine vibe • close-up frames • clean lighting">
@@ -962,9 +1023,6 @@
       </div>
     </div>
 
-    <!-- ✅ Added 3 more = Total 9 -->
-
-    <!-- 7 -->
     <div class="col-12 col-sm-6 col-lg-4 gallery-item" data-cat="traditional">
       <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#imgModal"
         data-img="images/10.jpeg" data-title="Traditional — Elegant" data-desc="Ethnic styling • soft glam • graceful expressions">
@@ -982,7 +1040,6 @@
       </div>
     </div>
 
-    <!-- 8 -->
     <div class="col-12 col-sm-6 col-lg-4 gallery-item" data-cat="western">
       <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#imgModal"
         data-img="images/11.jpeg" data-title="Western — Street Style" data-desc="Modern vibe • confident look • premium frame">
@@ -1000,7 +1057,6 @@
       </div>
     </div>
 
-    <!-- 9 -->
     <div class="col-12 col-sm-6 col-lg-4 gallery-item" data-cat="stills">
       <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#imgModal"
         data-img="images/12.jpeg" data-title="On-screen — Mood Frame" data-desc="Cinematic still • character mood • story-driven">
@@ -1082,21 +1138,81 @@
       </div>
     </div>
 
+    <!-- ✅ QUICK INFO (UPGRADED) -->
     <div class="col-12 col-lg-5">
-      <div class="glass p-4 h-100">
-        <h5 class="mb-2" style="font-weight:900">Quick Info</h5>
-
-        <div style="color:var(--muted); line-height:1.75">
-          <div class="d-flex justify-content-between gap-3"><span>Location</span><strong style="color:var(--text)">Noida :contentReference[oaicite:17]{index=17}</strong></div>
-          <div class="d-flex justify-content-between gap-3"><span>Phone/WhatsApp</span><strong style="color:var(--text)">+91 7870048407 :contentReference[oaicite:18]{index=18}</strong></div>
-          <div class="d-flex justify-content-between gap-3"><span>Email</span><strong style="color:var(--text)">actressmayagarg@gmail.com</strong></div>
-          <div class="d-flex justify-content-between gap-3"><span>Availability</span><strong style="color:var(--text)">Auditions & Shoots :contentReference[oaicite:19]{index=19}</strong></div>
-          <div class="d-flex justify-content-between gap-3"><span>Projects</span><strong style="color:var(--text)">Web • TV • Music • Short Films :contentReference[oaicite:20]{index=20}</strong></div>
+      <div class="glass p-4 h-100 quick-card">
+        <div class="d-flex align-items-start justify-content-between gap-3">
+          <div>
+            <div class="mini-badge mb-2"><i class="bi bi-patch-check-fill"></i> Available for Auditions & Shoots</div>
+            <h5 class="mb-1" style="font-weight:1000">Quick Info</h5>
+            <p class="mb-0" style="color:var(--muted); line-height:1.55">
+              For bookings, auditions, brand campaigns & collaborations — connect instantly.
+            </p>
+          </div>
+          <a href="Maya_Garg.pdf" class="btn btn-soft py-2 px-3 d-none d-md-inline-flex" download>
+            <i class="bi bi-file-earmark-pdf me-1"></i> PDF
+          </a>
         </div>
 
-        <div class="mt-3 p-3" style="border:1px dashed var(--line); border-radius:18px; background: rgba(255,255,255,.03)">
+        <div class="quick-actions mt-3">
+          <a class="btn btn-gold" href="tel:+917870048407"><i class="bi bi-telephone-fill me-1"></i> Call</a>
+          <a class="btn btn-soft" href="mailto:actressmayagarg@gmail.com"><i class="bi bi-envelope-fill me-1"></i> Email</a>
+          <a class="btn btn-soft" id="waQuickBtn" href="#"><i class="bi bi-whatsapp me-1"></i> WhatsApp</a>
+        </div>
+
+        <div class="info-grid mt-3">
+          <div class="info-item">
+            <div class="ic"><i class="bi bi-geo-alt-fill"></i></div>
+            <div>
+              <div class="k">Location</div>
+              <div class="v">Noida, India</div>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="ic"><i class="bi bi-telephone-fill"></i></div>
+            <div>
+              <div class="k">Phone / WhatsApp</div>
+              <div class="v">+91 7870048407</div>
+            </div>
+            <button class="copy-mini" id="copyPhoneBtn2" type="button" title="Copy phone">
+              <i class="bi bi-clipboard"></i>
+            </button>
+          </div>
+
+          <div class="info-item">
+            <div class="ic"><i class="bi bi-envelope-fill"></i></div>
+            <div>
+              <div class="k">Email</div>
+              <div class="v">actressmayagarg@gmail.com</div>
+            </div>
+            <button class="copy-mini" id="copyEmailBtn2" type="button" title="Copy email">
+              <i class="bi bi-clipboard"></i>
+            </button>
+          </div>
+
+          <div class="info-item">
+            <div class="ic"><i class="bi bi-calendar2-check-fill"></i></div>
+            <div>
+              <div class="k">Availability</div>
+              <div class="v">Auditions • Shoots • Brand Campaigns</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-3">
+          <div class="d-flex flex-wrap">
+            <span class="chip"><i class="bi bi-play-btn"></i> Web Series / OTT</span>
+            <span class="chip"><i class="bi bi-tv"></i> TV Serials</span>
+            <span class="chip"><i class="bi bi-mic"></i> Music Videos</span>
+            <span class="chip"><i class="bi bi-camera2"></i> Brand / Fashion</span>
+            <span class="chip"><i class="bi bi-film"></i> Short Films</span>
+          </div>
+        </div>
+
+        <div class="mt-3 p-3 quick-share">
           <div class="d-flex gap-2 align-items-start">
-            <i class="bi bi-file-earmark-pdf" style="color:var(--gold)"></i>
+            <i class="bi bi-share-fill" style="color:var(--gold)"></i>
             <div style="color:var(--muted); line-height:1.55">
               Share profile instantly:
               <div class="mt-2 d-flex flex-wrap gap-2">
@@ -1104,13 +1220,14 @@
                 <button class="btn btn-soft py-2" id="copyEmailBtn" type="button"><i class="bi bi-clipboard me-1"></i> Copy Email</button>
                 <button class="btn btn-soft py-2" id="copyPhoneBtn" type="button"><i class="bi bi-clipboard me-1"></i> Copy Phone</button>
               </div>
-              <small class="d-block mt-2">Tip: Keep only your best 8–12 photos.</small>
+              <small class="d-block mt-2">Tip: Keep only your best 8–12 photos in the gallery.</small>
             </div>
           </div>
         </div>
 
       </div>
     </div>
+
   </div>
 </section>
 
@@ -1121,7 +1238,7 @@
   </div>
 </footer>
 
-<!-- Floating WhatsApp Button -->
+<!-- Floating buttons -->
 <div class="wa-float">
   <a class="wa-btn" href="tel:+917870048407" aria-label="Call"><i class="bi bi-telephone-fill"></i></a>
   <a class="wa-btn" href="mailto:actressmayagarg@gmail.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
@@ -1148,10 +1265,10 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-  // ====== CONFIG (change anytime) ======
-  const WHATSAPP_NUMBER = "917870048407"; // from profile PDF
-  const EMAIL_TO = "actressmayagarg@gmail.com"; // requested by you
-  // ====================================
+  // ====== CONFIG ======
+  const WHATSAPP_NUMBER = "917870048407";
+  const EMAIL_TO = "actressmayagarg@gmail.com";
+  // ====================
 
   document.getElementById('year').textContent = new Date().getFullYear();
 
@@ -1208,12 +1325,12 @@
   }
 
   // WhatsApp actions
-  function openWhatsApp(){
-    const text = encodeURIComponent(buildMessage());
-    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
+  function openWhatsApp(text){
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
     window.open(url, "_blank", "noopener");
   }
 
+  // WhatsApp button near form
   document.getElementById("waBtn").addEventListener("click", () => {
     const name = safeVal("fName");
     const phone = safeVal("fPhone");
@@ -1222,14 +1339,23 @@
       showAlert("Please fill Name, Phone and Message before WhatsApp.");
       return;
     }
-    openWhatsApp();
+    openWhatsApp(buildMessage());
   });
 
+  // Floating WhatsApp button
   document.getElementById("waFloatBtn").addEventListener("click", (e)=>{
     e.preventDefault();
-    const text = encodeURIComponent("Hello Maya, I want to book you for a project. Please share availability.");
-    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, "_blank", "noopener");
+    openWhatsApp("Hello Maya, I want to book you for a project. Please share availability.");
   });
+
+  // Quick Info WhatsApp
+  const waQuickBtn = document.getElementById("waQuickBtn");
+  if(waQuickBtn){
+    waQuickBtn.addEventListener("click", (e)=>{
+      e.preventDefault();
+      openWhatsApp("Hello Maya, I want to book you for a project. Please share availability.");
+    });
+  }
 
   // Form submit => opens Email compose (mailto)
   document.getElementById("bookingForm").addEventListener("submit", (e)=>{
@@ -1246,7 +1372,7 @@
     window.location.href = `mailto:${EMAIL_TO}?subject=${subject}&body=${body}`;
   });
 
-  // Copy buttons
+  // Copy buttons (existing)
   document.getElementById("copyEmailBtn").addEventListener("click", async ()=>{
     try{ await navigator.clipboard.writeText(EMAIL_TO); showAlert("Email copied!"); }
     catch{ showAlert("Copy failed. Please copy manually."); }
@@ -1256,6 +1382,23 @@
     try{ await navigator.clipboard.writeText("+91 7870048407"); showAlert("Phone copied!"); }
     catch{ showAlert("Copy failed. Please copy manually."); }
   });
+
+  // Copy mini buttons (Quick Info)
+  const copyPhoneBtn2 = document.getElementById("copyPhoneBtn2");
+  if(copyPhoneBtn2){
+    copyPhoneBtn2.addEventListener("click", async ()=>{
+      try{ await navigator.clipboard.writeText("+91 7870048407"); showAlert("Phone copied!"); }
+      catch{ showAlert("Copy failed. Please copy manually."); }
+    });
+  }
+
+  const copyEmailBtn2 = document.getElementById("copyEmailBtn2");
+  if(copyEmailBtn2){
+    copyEmailBtn2.addEventListener("click", async ()=>{
+      try{ await navigator.clipboard.writeText(EMAIL_TO); showAlert("Email copied!"); }
+      catch{ showAlert("Copy failed. Please copy manually."); }
+    });
+  }
 </script>
 </body>
 </html>
